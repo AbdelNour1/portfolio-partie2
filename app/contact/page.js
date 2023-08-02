@@ -1,7 +1,11 @@
 "use client";
 
+
+
 import { useState } from "react";
 import "./Contact.css";
+
+
 
 const page = () => {
   const [name, setName] = useState("");
@@ -9,20 +13,33 @@ const page = () => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
+
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Vérification des données du formulaire
+
+
 
     if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
       setError("Veuillez remplir tous les champs du formulaire.");
-
       return;
     }
-    // Envoyer les données du formulaire à votre serveur ou effectuer une action supplémentaire
+
+
+
+    // Vérification de l'email au format valide
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.match(emailRegex)) {
+      setError("Veuillez saisir une adresse e-mail valide");
+      return;
+    }
+
+
 
     setSubmitted(true);
 
-    // Réinitialiser les champs du formulaire
+
 
     setName("");
     setEmail("");
@@ -30,9 +47,13 @@ const page = () => {
     setError("");
   };
 
+
+
   return (
     <div className="contact-container full-height">
       <h2>Contactez-nous</h2>
+
+
 
       {submitted ? (
         <p className="success-message">
@@ -42,9 +63,13 @@ const page = () => {
         <form className="contact-form" onSubmit={handleSubmit}>
           {error && <p className="error-message">{error}</p>}
 
+
+
           <fieldset>
             <div className="form-group">
               <label htmlFor="name">Nom </label>
+
+
 
               <input
                 type="text"
@@ -55,8 +80,12 @@ const page = () => {
               />
             </div>
 
+
+
             <div className="form-group">
               <label htmlFor="email">Email </label>
+
+
 
               <input
                 type="email"
@@ -68,8 +97,12 @@ const page = () => {
             </div>
           </fieldset>
 
+
+
           <div className="form-group">
             <label htmlFor="message">Message </label>
+
+
 
             <textarea
               id="message"
@@ -87,5 +120,7 @@ const page = () => {
     </div>
   );
 };
+
+
 
 export default page;
