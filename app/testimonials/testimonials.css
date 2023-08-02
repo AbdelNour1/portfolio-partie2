@@ -1,0 +1,67 @@
+/* testimonials.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+.testimonials-container {
+  min-height: 100vh;
+  margin: 10px;
+  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonials-container h2 {
+  text-align: center;
+  margin: 15px;
+}
+
+.testimonials-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes avec largeur égale */
+  grid-gap: 20px; /* Espacement entre les témoignages */
+}
+
+.testimonialItem {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.testimonialItem h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.testimonialtem p {
+  margin-bottom: 0;
+}
+
+.testimonialsList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.add-testimonial-button {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px; /* Ajout de la marge */
+}
+
+.add-testimonial-button:hover {
+  background-color: #1976d2;
+}
+
+.add-testimonial-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonialsList {
+    grid-template-columns: 1fr; /* 1 colonne */
+  }
+}
