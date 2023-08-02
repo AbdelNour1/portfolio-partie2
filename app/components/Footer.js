@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css"; // Importer le fichier CSS de Bootstrap
 import "./Footer.css";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -10,24 +11,22 @@ const Footer = () => {
         <div className="row">
           <div className="col">
             <div className="footer-links">
-              <a
-                href="https://github.com/AbdelNour1"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="https://github.com/AbdelNour1/portfolio-partie2"
+                
                 className="footer-link"
               >
                 <FaGithub className="icon" />
                 GitHub
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.linkedin.com/in/abdel-nour-hamadache-a102231b2/?fbclid=IwAR2mTHe7I0-sZsaAUDhrUi_Rv96MSe2wTE_5xfPOEHuBF9wB6XNqCvdua8A"
-                target="_blank"
-                rel="Abdel Nour Hamadache"
+                
                 className="footer-link"
               >
                 <FaLinkedin className="icon" />
                 LinkedIn
-              </a>
+              </Link>
             </div>
           </div>
         </div>
