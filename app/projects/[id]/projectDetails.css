@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+.project-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-details {
+  max-width: 800px; /* Ajustez la largeur souhaitée */
+  width: 90%; /* Ajustez la largeur souhaitée */
+  padding: 40px; /* Ajustez les marges intérieures souhaitées */
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project-details img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.project-details h3 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  margin-bottom: 20px;
+}
+
+.project-details .technologies {
+  margin-bottom: 20px;
+}
+
+.project-details .technologies p {
+  font-weight: bold;
+}
+
+.project-details .technologies ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-details .technologies li {
+  margin-bottom: 5px;
+}
+
+.project-details a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.project-details a:hover {
+  background-color: #1976d2;
+}
+.technology {
+  font-weight: bold;
+}
+.project-space {
+  height: 20px; /* Définissez la hauteur souhaitée */
+}
