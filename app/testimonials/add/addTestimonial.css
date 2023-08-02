@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+.add-testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Utiliser min-height au lieu de height */
+  background-color: #f5f5f5;
+  padding: 20px; /* Ajouter un padding pour éviter les interférences */
+  font-family: "Montserrat", sans-serif;
+}
+
+.testimonial-list-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.testimonial-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+}
+
+.add-testimonial-form-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.add-testimonial-form-group {
+  margin-bottom: 20px;
+}
+
+.add-testimonial-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.add-testimonial-input,
+.add-testimonial-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-testimonial-textarea {
+  height: 150px;
+}
+
+.add-testimonial-submit-button {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.success-message {
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+.edit-testimonial-button {
+  padding: 6px 12px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-testimonial-button:hover {
+  background-color: #1976d2;
+}
+
+.delete-testimonial-button {
+  padding: 6px 12px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-testimonial-button:hover {
+  background-color: #d32f2f;
+}
+
+.testimonials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 20px; /* Ajouter un padding pour éviter les interférences */
+  font-family: "Montserrat", sans-serif;
+  gap: 20px;
+}
+
+.testimonial-item-actions {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials-list {
+    flex-direction: column;
+  }
+  .testimonial-item {
+    width: 100%;
+  }
+}
